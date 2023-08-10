@@ -48,6 +48,7 @@
 }
 
 .content .btn{
+    display: inline-block;
     margin: 1rem 1rem; 
     /* padding-left: 0.6rem; */
 }
