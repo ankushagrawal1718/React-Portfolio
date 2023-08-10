@@ -5,10 +5,14 @@ import Project from "./pages/Project";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import { Routes,Route } from "react-router-dom";
+import { useEffect } from 'react';
 
 
 
 function App() {
+  useEffect(()=>{
+    document.title = "My Portfolio"
+  },[])
   return (
     <>
       <Routes>

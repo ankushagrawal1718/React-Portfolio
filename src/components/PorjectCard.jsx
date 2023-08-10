@@ -13,10 +13,10 @@ const PorjectCard = (props) => {
          {props.text}
         </p>
         <div className="pro-btns">
-          <NavLink to={props.view} className="btn">
+          <NavLink to={props.view} className="btn" target="_blank">
             View
           </NavLink>
-          <NavLink to={props.view} className="btn">
+          <NavLink to={props.viewCode} target="_blank" className="btn">
             Source
           </NavLink>
         </div>

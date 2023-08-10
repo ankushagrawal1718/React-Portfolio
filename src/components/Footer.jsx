@@ -1,7 +1,7 @@
 import "./FooterStyle.css";
 import React from "react";
+import { Link } from "react-router-dom";
 import {
-  FaFacebook,
   FaGithub,
   FaHome,
   FaInstagram,
@@ -9,7 +9,11 @@ import {
   FaMailBulk,
   FaPhone,
   FaTwitter,
+  FaWhatsapp,
+
 } from "react-icons/fa";
+
+import {BiLogoGmail} from "react-icons/bi"
 
 const Footer = () => {
   return (
@@ -50,26 +54,35 @@ const Footer = () => {
             perferendis earum voluptas commodi!
           </p>
           <div className="social">
-            <FaFacebook
-              size={40}
-              style={{ color: "white", marginRight: "2rem" }}
-            />
-            <FaTwitter
-              size={40}
-              style={{ color: "white", marginRight: "2rem" }}
-            />
-            <FaInstagram
-              size={40}
-              style={{ color: "white", marginRight: "2rem" }}
-            />
-            <FaLinkedin
-              size={40}
-              style={{ color: "white", marginRight: "2rem" }}
-            />
-            <FaGithub
-              size={40}
-              style={{ color: "white", marginRight: "2rem" }}
-            />
+          <Link to="https://wa.me/919460752352">
+            <FaWhatsapp
+                size={40}
+                style={{ color: "white", marginRight: "2rem" }}
+              />
+          </Link>
+            
+          <Link to="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJlFlgplKgzrhsMjzHpkmXZCsGjnMTtCRjCVjNKdPLqcRDqrvLsbbzDWgNcrjzBvJkbDlBV" target="_blank">
+            <BiLogoGmail
+                size={40}
+                style={{ color: "white", marginRight: "2rem" }}
+              />
+          </Link>
+            
+
+            <Link to="https://www.linkedin.com/in/ankush-agrawal/">
+              <FaLinkedin
+                size={40}
+                style={{ color: "white", marginRight: "2rem" }}
+              />
+            </Link>
+            
+            <Link to="https://github.com/ankushagrawal1718">
+              <FaGithub
+                size={40}
+                style={{ color: "white", marginRight: "2rem" }}
+              />
+            </Link>
+            
           </div>
         </div>
       </div>
