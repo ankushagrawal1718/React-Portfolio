@@ -4,11 +4,9 @@ import { Link } from "react-router-dom";
 import {
   FaGithub,
   FaHome,
-  FaInstagram,
   FaLinkedin,
   FaMailBulk,
   FaPhone,
-  FaTwitter,
   FaWhatsapp,
 
 } from "react-icons/fa";
@@ -61,7 +59,8 @@ const Footer = () => {
               />
           </Link>
             
-          <Link to="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJlFlgplKgzrhsMjzHpkmXZCsGjnMTtCRjCVjNKdPLqcRDqrvLsbbzDWgNcrjzBvJkbDlBV" target="_blank">
+          {/* <Link to="mailto:ankushagrawal4321@gmail.com" target="_blank"> */}
+          <Link to="https://mail.google.com/mail/?view=cm&to=ankushagrawal4321@gmail.com" target="_blank">
             <BiLogoGmail
                 size={40}
                 style={{ color: "white", marginRight: "2rem" }}

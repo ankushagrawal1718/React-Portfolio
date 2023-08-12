@@ -61,4 +61,8 @@
     .hero .content p{
         font-size: 1.4rem;
     }
+
+    .content .btn-light{
+        margin-left: 6px;
+    }
 }
